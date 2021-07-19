@@ -1,0 +1,43 @@
+<h4>Pipe</h4>
+<h4>pipe is used to transfer the data.</h4>
+<p>{{todayDate|date}}</p>
+<p>{{todayDate|date:"dd:mm:yyyy"}}</p>
+<p>{{todayDate|date:"fullDate"|uppercase}}</p>
+<p>{{todayDate|date:"fullDate"|lowercase}}</p>
+<hr>
+<h4>currency pipe</h4>
+<p>{{currency|currency:'ENR'}}</p>
+<p>{{currency|currency:'ENR':'code'}}</p>
+<p>{{currency|currency:'INR'}}</p>
+<p>{{currency|currency:'INR':'code'}}</p>
+<hr>
+<h4>Percent pipe</h4>
+<p>{{43.98|percent}}</p>
+<hr>
+<h4>case pipe</h4>
+<p>{{"Angular  Developer"|lowercase}}</p>
+<p>{{"Angular  Developer"|uppercase}}</p>
+<p>{{"Angular  Developer"|titlecase}}</p>
+<p>{{"Angular  Developer"|slice:1:7}}</p>
+<hr>
+
+<h4>Json Pipe</h4>
+<p>{{employees|json}}</p>
+<hr>
+<h4>custom pipe</h4>
+<p>square root of 64 is:{{64|sqrt}}</p>
+<hr>
+<h4>Service</h4>
+<app-employeelist></app-employeelist>
+
+<app-employeename></app-employeename>
+<hr>
+<div style="text-align:center ">
+<h4>Navigation</h4>
+<h4>Routing and Navigation</h4>
+<nav>
+  <a routerLink="/departments" routerLinkActive="active">Departments</a>
+  <a routerLink="/employees" routerLinkActive="active">employees</a>
+</nav>
+<router-outlet></router-outlet>
+  
