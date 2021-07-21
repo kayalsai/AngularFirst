@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -18,4 +19,13 @@ export class AppComponent {
     {empId:5,name:"ani",location:"TVM"},
 
   ];
+loginForm=new FormGroup({
+  userName:new FormControl(''),
+  password:new FormControl(''),
+
+});
+collectData()
+{
+  console.warn(this.loginForm.value);
+}
 }

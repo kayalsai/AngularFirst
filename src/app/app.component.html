@@ -40,4 +40,11 @@
   <a routerLink="/employees" routerLinkActive="active">employees</a>
 </nav>
 <router-outlet></router-outlet>
-  
+<hr>
+<h3>Routing Navigation in Navigation </h3>
+<h3>Angular Reactive Forms</h3>
+<form [formGroup]="loginForm" (ngSubmit)="collectData()">
+  <input type="text" name="username"  formControlName="username" Placeholder="username"><br>
+  <input type="password" name="password"  formControlName="password" Placeholder="password"><br>
+  <button type="submit">login</button>
+</form>

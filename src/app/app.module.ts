@@ -7,6 +7,9 @@ import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { CustompipePipe } from './custompipe.pipe';
 import { EmployeenameComponent } from './employeename/employeename.component';
 import { EmployeeserviceService } from './employeeservice.service';
+import { TaskComponent } from './task/task.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,16 @@ import { EmployeeserviceService } from './employeeservice.service';
     EmployeelistComponent,
     CustompipePipe,
     EmployeenameComponent,
-    routingComponents
+    routingComponents,
+    TaskComponent,
+    LoginComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [EmployeeserviceService],
   bootstrap: [AppComponent]
